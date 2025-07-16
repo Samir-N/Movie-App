@@ -1,12 +1,39 @@
-# React + Vite
+eact + Vite + Tailwind CSS + Appwrite - Movie App
+This project provides a minimal yet practical setup to build a Movie App using React, Vite, Tailwind CSS, and Appwrite. It focuses on fast development, clean UI, and backend integration with Appwrite for authentication and database management. The app integrates TMDB API for movie data and allows users to browse, search, and manage favorite movies with authentication features.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Currently, this project leverages Vite for ultra-fast development and Tailwind CSS for styling. Appwrite is used as the backend-as-a-service (BaaS) to handle user authentication, movie collections, and secure API access.
 
-Currently, two official plugins are available:
+Project Purpose
+This project demonstrates how to build a modern movie discovery app with:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+React for the UI
 
-## Expanding the ESLint configuration
+Vite for build tools and hot module replacement (HMR)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Tailwind CSS for fast and responsive styling
+
+Appwrite for backend (authentication, database, API management)
+
+TMDB API for accessing trending and popular movie data
+
+Appwrite Integration
+Appwrite is used for:
+
+User Authentication (Sign up, Login, Session Management)
+
+Storing user-specific data (such as favorite movies or watchlists)
+
+Secure API access and rules
+
+The Appwrite SDK is connected to the React app through Appwrite’s JavaScript SDK, allowing secure and efficient CRUD operations on user data.
+
+TMDB API Integration
+The Movie Database (TMDB) API is used to fetch:
+
+Trending Movies
+
+Search Results
+
+Movie Details (overview, rating, release date, etc.)
+
+API keys are stored securely in .env using Vite’s environment variables.
