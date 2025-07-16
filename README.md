@@ -1,39 +1,17 @@
-eact + Vite + Tailwind CSS + Appwrite - Movie App
-This project provides a minimal yet practical setup to build a Movie App using React, Vite, Tailwind CSS, and Appwrite. It focuses on fast development, clean UI, and backend integration with Appwrite for authentication and database management. The app integrates TMDB API for movie data and allows users to browse, search, and manage favorite movies with authentication features.
+Project
+A simple movie app built with React, Vite, Tailwind CSS, and Appwrite. It fetches data from TMDB API and allows users to browse and search movies.
 
-Currently, this project leverages Vite for ultra-fast development and Tailwind CSS for styling. Appwrite is used as the backend-as-a-service (BaaS) to handle user authentication, movie collections, and secure API access.
+Features
+Users can search movies, view trending lists, and manage favorites with authentication via Appwrite.
 
-Project Purpose
-This project demonstrates how to build a modern movie discovery app with:
+Backend
+Appwrite handles authentication and stores user-specific data.
 
-React for the UI
+API
+TMDB API is used for movie data like titles, ratings, and posters.
 
-Vite for build tools and hot module replacement (HMR)
+Tech Stack
+React for UI, Vite for build, Tailwind CSS for styling, Appwrite for backend.
 
-Tailwind CSS for fast and responsive styling
-
-Appwrite for backend (authentication, database, API management)
-
-TMDB API for accessing trending and popular movie data
-
-Appwrite Integration
-Appwrite is used for:
-
-User Authentication (Sign up, Login, Session Management)
-
-Storing user-specific data (such as favorite movies or watchlists)
-
-Secure API access and rules
-
-The Appwrite SDK is connected to the React app through Appwrite’s JavaScript SDK, allowing secure and efficient CRUD operations on user data.
-
-TMDB API Integration
-The Movie Database (TMDB) API is used to fetch:
-
-Trending Movies
-
-Search Results
-
-Movie Details (overview, rating, release date, etc.)
-
-API keys are stored securely in .env using Vite’s environment variables.
+Running Locally
+Clone the repo, install dependencies, and run the Vite dev server.
